@@ -1,5 +1,5 @@
 describe("findAndReplace", function() {
-  it("downcases and splits a given string into an array of words", function() {
-    expect(findAndReplace("When the Bell Tolls")).to.eql(["when", "the", "bell", "tolls"]);
+  it("replaces a given word with a given alternate word", function() {
+    expect(findAndReplace("Bell", "bell", "tolls")).to.eql("tolls");
   });
 });
