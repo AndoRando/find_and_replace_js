@@ -14,11 +14,11 @@ var findAndReplace = function(original, find, replace) {
 
 $(function() {
   $("form#find_and_replace").submit(function(event) {
-    var original_sentence = $("input#original_sentence").val();
+    var originalSentence = $("input#original_sentence").val();
     var find = $("input#find").val();
     var replace = $("input#replace").val();
 
-    var result = findAndReplace(original_sentence, find, replace);
+    var result = findAndReplace(originalSentence, find, replace);
 
     $(".new_sentence").text(result);
 
