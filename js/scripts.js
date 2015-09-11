@@ -3,9 +3,11 @@ var findAndReplace = function(original, find, replace) {
   var find = find.toLowerCase();
   var replace = replace.toLowerCase();
 
-  if (original == find) {
-    original = replace;
-  }
+  original.forEach(function(word) {
+    if (word == find) {
+      original[original.indexOf(word)] = replace;
+    }
+  });
 
-  return original;
+  return original.join(" ");
 };
